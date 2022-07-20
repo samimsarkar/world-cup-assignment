@@ -75,7 +75,7 @@ body{
 --------------------------------- */
 .main-section{
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 .main-container{
     width: 1324px;
@@ -116,38 +116,44 @@ body{
 /* ------------------------------
     Side Navigation Bar End
 --------------------------------- */
-.main-blog{
+
+.group-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 25px;
 }
-.blog .blog-img{
-    margin-bottom: -8px;
+.group-container img{
+    display: inline;
+    justify-items: start;
+    align-items: center;
+    width: 50px;
 }
-.blog-text{
-    padding: 15px 10px 10px;
-    border: 1px solid lightgrey;
+.group-img{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    justify-items: center;
+    padding: 10px;
+}
+.group-img div> h1{
+    margin: 20px;
+}
+.group-schudule hr{
+    border: 1px solid lightgray;
+    width: 100%;
+}
+.group-schudule>div >h3{
+    text-align: center;
+}
+.group-text{
+    display: flex;
+}
+.schudule-text{
+    padding: 0 auto;
     border-radius: 5px;
-}
-.blog-text img {
-    height: 24px;
-    width: 24px;
     vertical-align: middle;
+    align-items: center;
 }
-.blog-text button {
-    padding: 4px 16px;
-    font-size: 16px;
-    border-radius: 5px;
-    background-color: #fff;
-    cursor: pointer;
-}
-.blog-text span {
-    padding-right: 35px;
-}
-.blog-text h3 {
-    font-size: 20px;
-}
-
 /* ------------------------------
     Main Section part End
 --------------------------------- */
